@@ -6,6 +6,6 @@
 
 请点击以下链接查看你想看的内容
 
-[C语言基础](/problem/c基础)
+[C语言基础](/problem/c基础/README.md)
 
-<del>[C++语言基础](/problem/cpp基础)</del>
+<del>[C++语言基础](/problem/cpp基础/README.md)</del>

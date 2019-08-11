@@ -147,7 +147,7 @@ int main(void)
 ```c
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <math.h>
+#include <stdlib.h>
 
 int main(void)
 {
@@ -178,7 +178,7 @@ int main(void)
 ```c
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <math.h>
+#include <stdlib.h>
 
 int main(void)
 {
@@ -202,7 +202,7 @@ int main(void)
 ```c
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <math.h>
+#include <stdlib.h>
 
 int main(void)
 {
@@ -225,7 +225,7 @@ int main(void)
 ```c
 #define _CRT_SECURE_NO_WARNINGS
 #include <stdio.h>
-#include <math.h>
+#include <stdlib.h>
 
 int main(void)
 {
@@ -244,7 +244,7 @@ int main(void)
 </details>
 
 <details>
-<summary>写法8 递归实现</summary>
+<summary>写法8 递归实现1</summary>
 
 ```c
 #define _CRT_SECURE_NO_WARNINGS
@@ -283,6 +283,33 @@ void print(int level, int stars_num)
 int main(void)
 {
 	print(6, 0);
+	return 0;
+}
+```
+</details>
+
+<details>
+<summary>写法9 递归实现2</summary>
+
+```c
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+
+const char* p = "********************";
+int n = 7;
+
+int main(int a, char* v[])
+{
+	if (a < n)
+	{
+		printf("%*s%.*s\n", n - a, "", a * 2 - 1, p);
+		main(a + 1, v);
+		printf("%*s%.*s\n", n - a, "", a * 2 - 1, p);
+	}
+	else
+	{
+		printf("%.*s\n", a * 2 - 1, p);
+	}
 	return 0;
 }
 ```

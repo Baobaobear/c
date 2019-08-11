@@ -29,14 +29,14 @@
 
 [pascal三角](pascal_triangle.md) `*`
 
-<del>[排序](sort.md) `**`</del>
-
 <del>[随机洗牌](shuffle.md) `**`</del>
+
+[排序](sort.md) `***`
 
 ## 字符串
 [字符串反向](strrev.md)
 
-<del>[字符排序](sort_char.md)</del>
+<del>[字符排序](sort_char.md) `*`</del>
 
 ## 综合运用及其它
 <del>[黑洞数495](blackhole495.md)</del>
